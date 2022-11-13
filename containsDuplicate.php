@@ -7,8 +7,11 @@ class Solution
      */
     public function containsDuplicate($nums)
     {
-        //check for duplicates
-
-        //return answer
+        $hashset = [];
+        foreach ($nums as $num){
+            if (in_array($num, $hashset))
+                return true;
+            $hashset[] = $num;
+        }
     }
 }
