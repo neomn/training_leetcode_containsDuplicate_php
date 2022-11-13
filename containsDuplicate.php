@@ -12,6 +12,3 @@ class Solution
         //return answer
     }
 }
-
-$solution = new Solution();
-$solution->containsDuplicate(5);
